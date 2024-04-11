@@ -1,0 +1,988 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0eaf8; 
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #007bff;
+}
+
+/* Header styles */
+.discussion-forum__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4a90e2; 
+  padding: 1rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.discussion-forum__headline {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff; 
+}
+
+.discussion-forum__nav {
+  display: flex;
+}
+
+.discussion-forum__nav-item {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  background-color: #fff; 
+  color: #4a90e2; 
+}
+
+.discussion-forum__nav-item.active {
+  background-color: #007bff; 
+}
+
+
+.discussion-forum__content {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+.forum-sections {
+  margin-top: 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forum-sections__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #4a90e2;
+}
+
+.forum-sections__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.forum-sections__item {
+  margin: 0.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  animation: fadeIn 1s;
+}
+
+.forum-sections__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.forum-sections__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; 
+  padding: 1.5rem;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.forum-sections__link:hover {
+  background-color: #f1f1f1; 
+}
+
+.forum-sections__icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #4a90e2; 
+}
+
+.forum-sections__text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+.hot-discussions-container {
+ 
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px; 
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+}
+
+.hot-discussions-heading {
+  
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.hot-discussions-heading  {
+ 
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  color: orange;
+}
+
+.hot-discussions-intro {
+ 
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.hot-discussions-list {
+ 
+  list-style: none;
+  padding: 0;
+}
+
+.hot-discussion-title {
+  
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hot-discussion-title a {
+ 
+  color: #333;
+  text-decoration: none; 
+  transition: color 0.2s ease-in-out;
+}
+
+.hot-discussion-title a:hover {
+  
+  color: #007bff;
+}
+
+.hot-discussion-summary {
+  
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.hot-discussions-links {
+  
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.button {
+  
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  
+  background-color: #f5f5f5;
+}
+.discover-destinations-container {
+ 
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1000px; 
+  background-color: #f5f5f5; 
+  border-radius: 5px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.discover-destinations-heading {
+  
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+
+ 
+  animation: heading-pulse 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes heading-pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fas.fa-plane-departure {
+  
+  margin-left: 0.5rem;
+  color: #007bff; 
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+.discover-destinations-intro {
+ 
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #666;
+}
+
+.destination-cards-container {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.destination-card {
+ 
+  width: calc(33% - 1rem); 
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  transition: all 0.2s ease-in-out;
+  cursor: pointer; 
+
+ 
+  animation: card-hover 0.5s ease-in-out;
+}
+
+@keyframes card-hover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-3px); 
+  }
+}
+
+.destination-card:hover {
+ 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.destination-title {
+  
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  text-align: center;
+
+ 
+  animation: title-fade 1.5s ease-in-out alternate infinite;
+}
+
+@keyframes title-fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.destination-title a {
+  
+  color: #333;
+  text-decoration: none; 
+  transition: color 0.2s ease-in-out;
+}
+
+.destination-title a:hover {
+ 
+  color: #007bff;
+}
+
+.destination-description {
+ 
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0 1rem 1rem;
+  text-align: justify; 
+}
+.discover-destinations-container {
+ 
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1000px; 
+  background-color: #f5f5f5; 
+  border-radius: 5px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  overflow: hidden; 
+}
+
+.discover-destinations-heading {
+  
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+
+  
+  animation: heading-pulse 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes heading-pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fas.fa-plane-departure {
+  
+  margin-left: 0.5rem;
+  color: #007bff; 
+  font-size: 1.2rem;
+  vertical-align: middle;
+  animation: plane-wobble 1s ease-in-out infinite alternate;
+}
+
+@keyframes plane-wobble {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(5deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+.discover-destinations-intro {
+  
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #666; 
+}
+
+.destination-cards-container {
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem; 
+}
+
+.destination-card {
+  
+  width: calc(33% - 1rem); 
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  transition: all 0.2s ease-in-out;
+  cursor: pointer; 
+  position: relative; 
+}
+
+.destination-card:after {
+  
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0; 
+  transition: opacity 0.3s ease-in-out;
+}
+
+.destination-card:hover:after {
+ 
+  opacity: 0.3; 
+}
+
+.destination-card-content {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff; 
+  text-align: center;
+  padding: 1rem;
+  opacity: 0; 
+  transition: opacity 0.3s ease-in-out;
+}
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: "Lato", sans-serif; 
+background-color: #f0f8ff; 
+color: #333;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+a:hover {
+color: #007bff;
+}
+
+
+.expert-advice-section {
+margin: 5rem auto; 
+padding: 3rem;
+max-width: 1000px;
+background: linear-gradient(to bottom right, #fff, #e6f0ff);
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+overflow: hidden; 
+position: relative; 
+}
+
+.expert-advice-section:after {
+content: "";
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url("path/to/your/india-background-image.jpg"); 
+background-size: cover;
+background-position: center;
+opacity: 0.2; 
+filter: blur(5px);
+transition: opacity 0.5s ease-in-out;
+}
+
+.expert-advice-section:hover:after {
+opacity: 0.4; 
+}
+
+.expert-advice-section h2 {
+font-family: "Playfair Display", serif; 
+font-size: 2.4rem;
+margin-bottom: 1.5rem;
+text-align: center;
+color: #333; 
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+border-bottom: 2px solid #ddd; 
+padding-bottom: 0.5rem; 
+}
+
+.expert-advice-section section {
+margin-bottom: 3rem; 
+}
+
+.expert-advice-section section h3 {
+font-family: "Montserrat", sans-serif; 
+font-size: 1.6rem;
+margin-bottom: 1rem;
+color: #666; 
+text-decoration: underline; 
+text-underline-position: after;
+text-decoration-color: #ddd; 
+text-decoration-thickness: 2px; 
+}
+
+.expert-advice-section section ul {
+list-style: none; 
+padding: 0;
+margin: 0;
+}
+
+.expert-advice-section section li {
+margin-bottom: 1rem;
+line-height: 1.6; 
+color: #333; 
+position: relative; /* Required for list item hover effects */
+transition: color 0.3s ease-in-out; /* Smooth color change on hover */
+}
+
+.expert-advice-section section li::before {
+content: "•"; /* Bullet point character */
+display: block;
+position: absolute;
+top: 0.4rem; 
+left: -1.5rem; 
+font-size: 18px; 
+}
+/* General Layout */
+.upcoming-events-container {
+  margin: 40px auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #2c3e50; 
+}
+
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Event Cards */
+.event-card {
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 350px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.event-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.event-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.event-title {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #34495e; 
+}
+
+.event-info {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #6c757d; 
+}
+
+.event-description {
+  margin-top: 15px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.event-links {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.event-link,
+.event-resource-link {
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #34495e;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.event-link:hover,
+.event-resource-link:hover {
+  background-color: #e0e0e0;
+}
+/* General Layout */
+.upcoming-events-container {
+  background: linear-gradient(to right, #f0f0f0, #e0e0e0); 
+}
+
+h2 {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Event Cards */
+.event-card {
+  border-radius: 5px 5px 0 0; /* Rounded top corners only */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease-in-out; /* Smoother hover animations */
+}
+
+.event-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transform: translateY(-5px); /* Subtle upward lift on hover */
+}
+
+.event-title {
+  color: #2980b9; /* Teal accent for titles */
+}
+
+/* Link Styles */
+.event-link,
+.event-resource-link {
+  background-color: #f4f4f4;
+  border: 1px solid #e0e0e0;
+  color: #34495e;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.event-link:hover,
+.event-resource-link:hover {
+  background-color: #e0e0e0;
+  border-color: #2980b9; /* Teal border on hover */
+}
+/* General Layout */
+/* General Layout */
+.travel-trips {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.travel-trips-header {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #333; /* Adjust header text color */
+}
+
+/* Trip Cards */
+.trip-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.trip-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.trip-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.trip-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transform: translateY(-5px);
+}
+
+/* Image and Info Styling */
+.trip-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.trip-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.trip-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #222; /* Adjust title text color */
+}
+
+.trip-description {
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Individual Card Coloring (modify as desired) */
+.trip-card-1 {
+  background-color: #f5f5f5; /* Light gray */
+}
+
+.trip-card-2 {
+  background-color: #f0f8ff; /* Light blue */
+}
+
+.trip-card-3 {
+  background-color: #fae0e4; /* Light pink */
+}
+
+.trip-card-4 {
+  background-color: #f7f7f7; /* Light gray */
+}
+
+.trip-card-5 {
+  background-color: #f9f4f5; /* Light beige */
+}
+/* Global Styles */
+.photography-guide {
+  padding: 2rem;
+  background-color: #f5f7fa; /* Soft background color */
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.photography-guide h2 {
+  font-size: 2rem;
+  color: #4a90e2; /* Blue color for main heading */
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.guide-section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #fff; /* White background for sections */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.guide-section h3 {
+  font-size: 1.5rem;
+  color: #4a90e2;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #4a90e2; /* Blue bullet point */
+}
+
+a {
+  color: #4a90e2; /* Blue link color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Additional hover effect for sections */
+.guide-section:hover {
+  background-color: #e0eaf8;
+  transition: background-color 0.3s ease;
+}
+/* travel-trips.css */
+
+/* General styles */
+.travel-trips {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.travel-trips h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #4b6584;
+  margin-bottom: 30px;
+}
+
+/* Trip cards */
+.trip-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.trip-card {
+  background-color: #f7f9fc;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.trip-card:hover {
+  transform: translateY(-5px);
+}
+
+.trip-card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.trip-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.trip-card-title {
+  margin: 10px 15px;
+  font-size: 1.2rem;
+}
+
+.trip-card-description {
+  margin: 10px 15px;
+  color: #4b6584;
+  font-size: 1rem;
+}
+/* hot-discussions.css */
+
+/* General styles */
+.hot-discussions-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hot-discussions-heading {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hot-discussions-intro {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Discussions list */
+.hot-discussions-list {
+  list-style: none;
+  padding: 0;
+}
+
+.hot-discussion-title {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.hot-discussion-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hot-discussion-summary {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Additional resources section */
+.hot-discussions-resources {
+  margin-top: 30px;
+}
+
+.additional-resources-list {
+  list-style: none;
+  padding: 0;
+}
+
+.additional-resources-list li {
+  margin-bottom: 10px;
+}
+
+.additional-resources-list a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Button styles */
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hot-discussions-heading {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+
+

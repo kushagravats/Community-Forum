@@ -1,0 +1,58 @@
+.discussion-forum {
+  background-color: #f5f5f5;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+.discussion-forum__header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.discussion-forum__logo img {
+  max-height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.discussion-forum__logo img:hover {
+  transform: scale(1.05);
+}
+
+.discussion-forum__nav {
+  display: flex;
+}
+
+.discussion-forum__nav-item {
+  margin-left: 2rem;
+}
+
+.discussion-forum__nav-item a {
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.discussion-forum__nav-item.active a,
+.discussion-forum__nav-item a:hover {
+  color: #007bff;
+}
+
+.discussion-forum__nav-icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.discussion-forum__nav-text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.discussion-forum__content {
+  padding: 2rem;
+}
