@@ -103,9 +103,9 @@ const DiscussionForum = () => {
             </li>
           ))}
           {/* Additional Resources */}
-          {additionalResources.map((resource, index) => (
+          {additionalResources.map((resource) => (
             <li
-              key={index}
+              key={resource.title}
               className="forum-sections__item"
               style={{ backgroundColor: "#A0522D" }}
             >
